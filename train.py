@@ -27,7 +27,7 @@ class CNN(object):
 
 class DataSource(object):
     def __init__(self):
-        # mnist数据集存储的位置，如何不存在将自动下载
+        # mnist数据集存储的位置，如果不存在将自动下载
         data_path = os.path.abspath(os.path.dirname(
             __file__)) + '/mnist/data_set/mnist.npz'
         (train_images, train_labels), (test_images,
